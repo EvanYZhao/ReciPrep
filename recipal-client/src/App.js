@@ -1,7 +1,8 @@
+import SignInPage from './pages/SignInPage';
 function App() {
   return (
     <div>
-      ReciPal beginnings!
+      <SignInPage />
     </div>
   );
 }
