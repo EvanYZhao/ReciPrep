@@ -7,6 +7,7 @@ body {
     align-items: center;
 }
 
+/* Recyclable */
 .constraint {
     width: 282px;
     height: 583px;
@@ -18,4 +19,37 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
+}
+
+/* Sign In Page */
+.signin-wrapper, .signout-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100% - 125px);
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.logo {
+    width: 75%;
+    margin-top: 20%;
+}
+
+.google-signin-button{
+    margin-bottom: 40px;
+    z-index: 1 !important;
+}
+
+.signout-button{
+    width: 85%;
+    height: 11%;
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+/* Home Page */
+.signout-wrapper h1{
+    text-align: center;
 }
