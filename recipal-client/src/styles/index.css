@@ -19,3 +19,23 @@ body {
     height: 100%;
     position: absolute;
 }
+
+/* Sign In Page */
+.signin-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100% - 125px);
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.logo {
+    width: 75%;
+    margin-top: 20%;
+}
+
+.google-signin-button{
+    margin-bottom: 40px;
+}
