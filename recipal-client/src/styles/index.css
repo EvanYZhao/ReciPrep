@@ -7,6 +7,7 @@ body {
     align-items: center;
 }
 
+/* Recyclable */
 .constraint {
     width: 282px;
     height: 583px;
@@ -21,7 +22,7 @@ body {
 }
 
 /* Sign In Page */
-.signin-wrapper {
+.signin-wrapper, .signout-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,4 +47,9 @@ body {
     height: 11%;
     margin-bottom: 40px;
     z-index: 1;
+}
+
+/* Home Page */
+.signout-wrapper h1{
+    text-align: center;
 }
