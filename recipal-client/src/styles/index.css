@@ -38,4 +38,5 @@ body {
 
 .google-signin-button{
     margin-bottom: 40px;
+    z-index: 1 !important;
 }
