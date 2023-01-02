@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { GoogleButton } from 'react-google-button';
 import { UserAuth } from '../context/AuthContext';
-
-
+import { useNavigate } from 'react-router-dom';
 // Might need a sticky header and footer for this
 
 const SignInPage = () => {
-
-  const {googleSignIn} = UserAuth();
+  const {googleSignIn, user} = UserAuth();
+  const navigate = useNavigate()
 
   const handleGoogleSignIn = async () => {
     try{
@@ -16,6 +15,12 @@ const SignInPage = () => {
       console.log(error)
     }
   }
+
+  useEffect(() => {
+    if(user != null){
+      navigate('/home')
+    }
+  }, [user])
 
   return (
     <div className='constraint'>

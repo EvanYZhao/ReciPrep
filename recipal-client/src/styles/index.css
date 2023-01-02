@@ -40,3 +40,10 @@ body {
     margin-bottom: 40px;
     z-index: 1 !important;
 }
+
+.signout-button{
+    width: 85%;
+    height: 11%;
+    margin-bottom: 40px;
+    z-index: 1;
+}
