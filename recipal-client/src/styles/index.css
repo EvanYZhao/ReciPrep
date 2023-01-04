@@ -1,55 +1,79 @@
+:root {
+  --clickable: 1;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Recyclable */
 .constraint {
-    width: 282px;
-    height: 583px;
-    position: relative;
-    border-radius: 55px;
+  width: 282px;
+  height: 583px;
+  position: relative;
+  border-radius: 55px;
 }
 
 .iPhone {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 /* Sign In Page */
-.signin-wrapper, .signout-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: calc(100% - 125px);
-    padding-top: 60px;
-    padding-bottom: 70px;
+.signin-wrapper,
+.signout-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100% - 125px);
+  padding-top: 60px;
+  padding-bottom: 70px;
 }
 
 .logo {
-    width: 75%;
-    margin-top: 20%;
+  width: 75%;
+  margin-top: 20%;
 }
 
-.google-signin-button{
-    margin-bottom: 40px;
-    z-index: 1 !important;
+.google-signin-button {
+  margin-bottom: 40px;
+  z-index: var(--clickable) !important;
 }
 
-.signout-button{
-    width: 85%;
-    height: 11%;
-    margin-bottom: 40px;
-    z-index: 1;
+.signout-button {
+  width: 85%;
+  height: 11%;
+  margin-bottom: 40px;
+  z-index: var(--clickable);
 }
 
 /* Home Page */
-.signout-wrapper h1{
-    text-align: center;
+.signout-wrapper h1 {
+  text-align: center;
+}
+
+.submission-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submission-form label {
+  text-align: center;
+}
+
+.ingredient-input {
+  z-index: var(--clickable);
+}
+
+.submit-button{
+  height: 100%;
+  z-index: var(--clickable);
+  padding-top: 5px;
 }
