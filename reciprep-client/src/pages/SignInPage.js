@@ -20,7 +20,7 @@ const SignInPage = () => {
     if (user != null) {
       navigate("/home");
     }
-  }, [user]);
+  }, [user, navigate]);
 
   return (
     <div className="constraint">
