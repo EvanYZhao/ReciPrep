@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 #credentials
-/src/components/creds.js
+src/components/creds.js
